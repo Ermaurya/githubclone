@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --gray: #04040A;
+  --dark-gray: #181b22;
+  --black: #111117;
+  --dark-black: #0D1117;
+  --green: #458341;
+  --light: #F0F6FC;
+  --light-gray: #8B949E;
+  --dark-blue: #00171F;
+}
+
+body, h6, h5, h4, h3, h2, h1, p {
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: var(--gray);
+  color: var(--light);
+
+}
+
+main {
+  background-color: var(--gray);
+  color: var(--light);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  height: 100%;
+  width: 100%;
+
+}
+
+
+/* main > .card {
+  width: 100vw;
+  max-width: 500px;
+  background-color: #455A64;
+  padding: 0.5rem;
+  border-radius: 5px;
+} */
+.search-Navbar .errorpage{
+  height: auto;
+  width: auto;
+  margin-top: 2rem;
+  margin: 5rem;
+}
+.search-Navbar .errorpage img{
+  color: #00171F;
+  opacity: .1;
+  height: 30rem;
+  width:50rem;
+}
+.search-Navbar{
+  width: 100%;
+  height: 55px;
+  background-color: rgb(19, 36, 51);
+  box-shadow: 2px 0px 10px red;
+}
+.search-card{
+  /* border: 3px solid red; */
+}
+.search-card > form > button {
+  width: 5rem;
+  height: 1.6rem;
+  background-color: var(--blue);
+  border-color: var(--blue);
+  border-style: solid;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.15s linear;
+}
+
+.search-card > form > button:hover {
+  /* background-color: var(--dark-blue);
+  color: var(--white); */
+  /* background-color: #00171F; */
+  background-color: transparent;
+  color: rgb(134, 185, 150);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 10px 0px 25px blue, 0px 0px 25px red, 0px 0px 25px green;
+  
+}
+
+.search-card > form > input {
+  width: calc(25% - 6rem);
+  height:22px;
+  margin-right: 0.5rem;
+  margin-left: 5%;
+  margin-top: 1.2rem;
+  border-radius: 7px;
+  background-color: rgb(19, 36, 51);
+  border: 1px solid gray;
+  opacity: .6;
+  
+}
+.input-area{
+  color:#f8f8f8;
+  /* font-display: 10px; */
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.search-card > form > input:focus {
+  outline:none;
+  background-color: rgb(108, 113, 121);
+  width: calc(50% - 6rem);
+  transition: all 0.19s linear;
+  cursor: text;
+  /* transition: all 0.19s ease-in-out; */
+  /* transition: width .5s ease-in; */
+  /* transition: width .5s ease-out; */
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .10s ease-in;
+}
+.user-card-detail{
+  /* border: 2px solid white; */
+  /* background-color: #756363; */
+  background-color: rgb(19, 36, 51);
+  border-radius: 20px;
+  outline: 2px solid rebeccapurple;
+  outline-offset: 6px;
+  /* box-shadow: 2px 2px 6px rgb(21, 24, 58); */
+  box-shadow: 5px 5px 25px blue, 5px 5px 25px red, 5px 5px 25px green;
+  
+  
+}
+.user-profile-img{
+  border-radius: 50%;
+  width: 18%;
+  /* height:18%; */
+  outline: 3px solid white;
+  outline-offset: 6px;
+  margin: 20px 10px 0px;
+  margin-left: 26px;
+  box-shadow: 5px 5px 25px blue, 5px 5px 25px red, 5px 5px 25px green;
+  
+  
+}
+.user-profile-text{
+  display: inline-block;
+  margin: 2.3rem 3rem 0px; /* top | horizontal (left, right) | bottom */
+  vertical-align: top;
+  margin-left: 3rem;
+  
+  
+}
+.user-profile-text a{
+  text-decoration: none;
+  opacity: .5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.user-profile-text p{
+  opacity: .6;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.user-fans-buttons{
+  display: flex;
+  justify-content: space-around;
+}
+.user-fans-buttons > button {
+  width: 10rem;
+  padding: 0.5rem 0px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  border-radius: 2px;
+}
+
+.user-fans-buttons > button > span {
+  display: block;
+  font-weight: bold;
+}
+
+.user-fans-buttons > button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 10px 0px 25px blue, 0px 0px 25px red, 0px 0px 25px green;
+  
+}
+/* RepoList Card CSS */
+.repoList-card{
+  background-color: rgb(19, 36, 51);
+  border-radius: 20px;
+  outline: 2px solid rebeccapurple;
+  outline-offset: 6px;
+  height: auto;
+  /* height: 13rem; */
+  width: 55rem;
+  /* box-shadow: 2px 2px 6px rgb(21, 24, 58); */
+  box-shadow: 5px 5px 25px blue, 5px 5px 25px red, 5px 5px 25px green;
+  
+}
+.repoList-card li{
+  display: flex;
+overflow-wrap: break-word;
+  list-style: none;
+  color: green;
+  /* width: 30%; */
+  height: fit-content;
+
+  background-color: #2a2a72;
+  border-radius: 5px;
+  display: inline-block;
+  color: rgb(8, 6, 6);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  /* text-decoration: none; */
+  max-width: 400px;
+}
+.repoList-card a{
+  color: darkgray;
+  font-size: 17px;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.repoList-card a:hover{
+  color: rgb(82, 248, 41);
+}
+.repoList-card a:active{
+  color: #5e5e5e;
+  opacity: .7;
+}
+/* .repoList-card button{
+  width: 12rem;
+  height: 2.3em;
+  border-radius: 5px;
+  background-color: #2a2a72;
+  cursor: pointer;
+  border: none;
+  
+} */
+.load-more{
+  margin-top: -7rem;
+
+}
+.load-more button{
+  width: 12rem;
+  height: 3em;
+  /* margin-top: -12rem; */
+  border-radius: 5px;
+  background-color: #2a2a72;
+  cursor: pointer;
+  border: none;
+  /* z-index: 12; */
+}
+
+.load-more button:hover{
+  background-color: #00171F;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 10px 0px 25px blue, 0px 0px 25px red, 0px 0px 25px green;
+  
+}
+.footer-card{
+  background-color: rgb(19, 36, 51);
+  outline: 2px solid rebeccapurple;
+  outline-offset: 6px;
+  height: 100%;
+  width: 100%;
+  /* box-shadow: 2px 2px 6px rgb(21, 24, 58); */
+  box-shadow: 5px 5px 25px blue, 5px 5px 25px red, 5px 5px 25px green;
+}
+.footer-card ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  
+}
+.footer-card li>a{
+  color: white;
+}
+.user-fans-buttons .active{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 5px 5px 25px blue, 5px 5px 25px red, 5px 5px 25px green !important;
+
+}
+.following-list-card,.follower-list-card{
+  display: flex;
+  
+}
+.following-list-card img,.follower-list-card img{
+  border-radius: 50%;
+  width: 5rem;
+  margin: 10px;
+}
+.following-list-card .fan-name,.follower-list-card .fan-name{
+  margin-left:1rem;
+  margin-top: 2rem;
+}
